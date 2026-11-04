@@ -8,6 +8,10 @@ on:
       - 'docs/**'
       - 'mkdocs.yml'
 
+# 加上这行，给工作流写入权限
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
